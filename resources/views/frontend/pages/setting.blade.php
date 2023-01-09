@@ -46,7 +46,7 @@
 									<div class="row-comment">										
 										<p class="col-4">
 											<label>Name</label>
-											<input id="name" value="{{$user_service->services->name}}" type="text" disabled>
+											<input id="name" value="{{$user_service->services != null ? $user_service->services->name : ''}}" type="text" disabled>
 										</p>
 										<p class="col-4">
 											<label>Price</label>

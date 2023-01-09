@@ -22,9 +22,10 @@
 				<li><a href="{{route('home')}}">Home</a></li>
 				<li><a href="{{route('freelancer')}}">Freelancer</a></li>
 				<li><a href="{{route('services')}}">Services</a></li>
-				<li><a href="{{route('about')}}">About Us</a></li>					
+				<li><a href="{{route('about')}}">About Us</a></li>
+				@if(isset(auth()->user()->id))					
 				<li><a href="{{route('setting')}}">Setting</a></li>					
-					
+					@endif
 				</ul>
 			</nav>	
 		</div>
